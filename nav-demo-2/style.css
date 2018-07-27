@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* height: 100vh; */
+    background: grey url(./wall.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+main {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+kbd {
+    border: 1px solid red;
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+
+main .wrapper div:nth-child(2) {
+    margin-left: -22px;
+}
+
+main .wrapper div:nth-child(3) {
+    margin-left: -80px;
+}
+
+main .wrapper {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+kbd>button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+kbd:hover>button {
+    display: inline-block;
+}
+
+.key {
+    border: none;
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to bottom, #292929 0%, #011111 100%);
+    color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.key .text {
+    position: absolute;
+    left: 4px;
+    top: 2px;
+}
+
+.key img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+
+.row {
+    margin: 20px;
+}
+
+.row .key {
+    margin: 0 10px;
+}
