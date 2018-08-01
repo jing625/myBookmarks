@@ -36,7 +36,7 @@ black.onclick = function () {
   context.fillStyle = 'black'
   context.strokeStyle = 'black'
   black.classList.add('active')
-  red.classList.add('active')
+  red.classList.remove('active')
   green.classList.remove('active')
   blue.classList.remove('active')
 }
